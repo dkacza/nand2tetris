@@ -19,6 +19,7 @@
   <lib desc="#BFH-Praktika" name="10"/>
   <lib desc="#Input/Output-Extra" name="11"/>
   <lib desc="#Soc" name="12"/>
+  <lib desc="file#hac_01.circ" name="13"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -97,10 +98,10 @@
       <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
-    <comp loc="(530,150)" name="add16"/>
-    <comp loc="(530,600)" name="alu">
+    <comp loc="(260,610)" name="alu">
       <a name="label" val="ALU1"/>
     </comp>
+    <comp loc="(530,150)" name="add16"/>
     <comp loc="(540,320)" name="inc16"/>
     <wire from="(210,150)" to="(390,150)"/>
     <wire from="(210,200)" to="(390,200)"/>
@@ -1133,7 +1134,7 @@
       <a name="size" val="30"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="1" loc="(600,310)" name="OR Gate">
+    <comp lib="1" loc="(600,310)" name="AND Gate">
       <a name="width" val="16"/>
     </comp>
     <comp lib="1" loc="(720,350)" name="NOT Gate">
