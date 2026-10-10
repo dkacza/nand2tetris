@@ -20,7 +20,7 @@
   <lib desc="#Input/Output-Extra" name="11"/>
   <lib desc="#Soc" name="12"/>
   <lib desc="file#hac_01.circ" name="13"/>
-  <main name="main"/>
+  <main name="add"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -54,66 +54,6 @@
     <tool name="D Flip-Flop"/>
     <tool name="Register"/>
   </toolbar>
-  <circuit name="main">
-    <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="main"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(210,150)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="A"/>
-      <a name="radix" val="10signed"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="0" loc="(210,200)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="B"/>
-      <a name="radix" val="10signed"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="0" loc="(210,350)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="A2"/>
-      <a name="radix" val="10signed"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="0" loc="(590,150)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Y"/>
-      <a name="radix" val="10signed"/>
-      <a name="type" val="output"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="0" loc="(590,200)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="OVF"/>
-      <a name="type" val="output"/>
-    </comp>
-    <comp lib="0" loc="(590,350)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="radix" val="10signed"/>
-      <a name="type" val="output"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp loc="(260,610)" name="alu">
-      <a name="label" val="ALU1"/>
-    </comp>
-    <comp loc="(530,150)" name="add16"/>
-    <comp loc="(540,320)" name="inc16"/>
-    <wire from="(210,150)" to="(390,150)"/>
-    <wire from="(210,200)" to="(390,200)"/>
-    <wire from="(210,350)" to="(390,350)"/>
-    <wire from="(390,320)" to="(390,350)"/>
-    <wire from="(390,320)" to="(400,320)"/>
-    <wire from="(530,150)" to="(590,150)"/>
-    <wire from="(530,200)" to="(590,200)"/>
-    <wire from="(540,320)" to="(550,320)"/>
-    <wire from="(550,320)" to="(550,350)"/>
-    <wire from="(550,350)" to="(590,350)"/>
-  </circuit>
   <circuit name="add">
     <a name="appearance" val="custom"/>
     <a name="circuit" val="add"/>
